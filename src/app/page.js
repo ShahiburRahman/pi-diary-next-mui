@@ -1,15 +1,17 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+import Navbar from './components/Navbar/Nav'
 
-const inter = Inter({ subsets: ['latin'] })
+
 
 export default function Home() {
   return (
     <main>
-      <h2 className='text-red-300 font-bold bg-blue-400'>
-        hi
-      </h2>
+      <Navbar/>
+      <div className='flex items-center justify-center h-96'>
+        Hello world
+      </div>
+      <div className='flex items-center justify-center h-96'>
+        Hello world
+      </div>
     </main>
   )
 }
